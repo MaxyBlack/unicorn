@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace Unicorn\Events;
 
 abstract class Event
 {
