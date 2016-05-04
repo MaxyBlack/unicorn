@@ -17,21 +17,21 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'Unicorn\Http\Controllers';
 
     protected $routeGroups = [
-        'frontend'=>[
-            'path'=>'Frontend.php'
+        'frontend' => [
+            'path' => 'Frontend.php',
         ],
-        'backend'=>[
-            'path'=>'Backend.php'
+        'backend'  => [
+            'path' => 'Backend.php',
         ],
-        'api'=>[
-            'path'=>'Api.php'
+        'api'      => [
+            'path' => 'Api.php',
         ],
     ];
 
     /**
      * Define your route model bindings, pattern filters, etc.
      *
-     * @param  \Illuminate\Routing\Router  $router
+     * @param  \Illuminate\Routing\Router $router
      * @return void
      */
     public function boot(Router $router)
@@ -44,14 +44,14 @@ class RouteServiceProvider extends ServiceProvider
     /**
      * Define the routes for the application.
      *
-     * @param  \Illuminate\Routing\Router  $router
+     * @param  \Illuminate\Routing\Router $router
      * @return void
      */
     public function map(Router $router)
     {
-        if(env('APP_ENV') =='local'){
+        if (env('APP_ENV') == 'local') {
             $this->routeGroups['dev'] = [
-                'path'=>'Dev.php'
+                'path' => 'Dev.php',
             ];
         }
 
@@ -65,7 +65,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * These routes all receive session state, CSRF protection, etc.
      *
-     * @param  \Illuminate\Routing\Router  $router
+     * @param  \Illuminate\Routing\Router $router
      * @return void
      */
     protected function mapWebRoutes(Router $router)
@@ -90,6 +90,6 @@ class RouteServiceProvider extends ServiceProvider
          *
          * implement events
          * */
-        require app_path('Http/Routes/'.$group['path']);
+        require app_path('Http/Routes/' . $group['path']);
     }
 }
