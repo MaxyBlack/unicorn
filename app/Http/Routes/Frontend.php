@@ -5,3 +5,5 @@
 $router->get('/', function () {
     return view('frontend.pages.welcome');
 });
+
+

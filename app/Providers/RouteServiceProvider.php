@@ -5,6 +5,10 @@ namespace Unicorn\Providers;
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
+/**
+ * Class RouteServiceProvider
+ * @package Unicorn\Providers
+ */
 class RouteServiceProvider extends ServiceProvider
 {
     /**
@@ -16,6 +20,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected $namespace = 'Unicorn\Http\Controllers';
 
+    /**
+     * @var array
+     */
     protected $routeGroups = [
         'frontend' => [
             'path' => 'Frontend.php',

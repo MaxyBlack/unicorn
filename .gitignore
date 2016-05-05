@@ -1,8 +1,15 @@
 /vendor
 /node_modules
 /public/storage
+/public/rxjs
+/public/systemjs
+/public/typescript
+/public/es6-shim
+/public/@angular
+/public/zone
 Homestead.yaml
 Homestead.json
 composer.lock
+/typings
 .env
 /.idea
