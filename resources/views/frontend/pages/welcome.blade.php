@@ -36,12 +36,7 @@
         </style>
     </head>
     <body id="app">
-        <div class="container">
-            <div class="content">
-                <div class="title">Unicorn</div>
-                <welcome>Loading...</welcome>
-            </div>
-        </div>
+        <welcome></welcome>
         <script src="{{asset('js/unicorn.js')}}"></script>
     </body>
 </html>

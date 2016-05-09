@@ -1,11 +1,15 @@
 <template>
-    <h3>{{ msg }}</h3>
+    <div class="container">
+        <div class="content">
+            <div class="title">{{ msg }}</div>
+        </div>
+    </div>
 </template>
 <script>
     export default{
         data(){
             return{
-                msg:'Welcome'
+                msg:'Unicorn'
             }
         },
         components:{}
