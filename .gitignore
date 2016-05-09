@@ -7,3 +7,4 @@ composer.lock
 /typings
 .env
 /.idea
+npm-debug.log

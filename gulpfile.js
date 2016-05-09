@@ -1,4 +1,7 @@
 var elixir = require('laravel-elixir');
+
+
+require('laravel-elixir-vueify');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management

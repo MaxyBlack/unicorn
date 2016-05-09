@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>Unicorn</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-        <script src="es6-shim/es6-shim.min.js"></script>
-
-        <script src="zone/zone.js"></script>
-        <script src="systemjs/dist/system.src.js"></script>
-
-        <!-- 2. Configure SystemJS -->
-        <script src="systemjs.config.js"></script>
-        <script>
-            System.import('app').catch(function(err){ console.error(err);  });
-        </script>
 
         <style>
             html, body {
@@ -45,12 +35,13 @@
             }
         </style>
     </head>
-    <body>
+    <body id="app">
         <div class="container">
             <div class="content">
                 <div class="title">Unicorn</div>
-                <my-app>Loading...</my-app>
+                <welcome>Loading...</welcome>
             </div>
         </div>
+        <script src="{{asset('js/unicorn.js')}}"></script>
     </body>
 </html>
