@@ -1,9 +1,12 @@
 <?php
-/* @var Illuminate\Routing\Router $router */
+Route::group(['middleware' => 'web'], function() {
 
-
-$router->get('/', function () {
-    return view('frontend.pages.welcome');
+    /**
+     * Frontend Routes
+     * Namespaces indicate folder structure
+     */
+    Route::group(['namespace' => 'Frontend'], function () {
+        require (__DIR__ . '/Frontend/Frontend.php');
+        require (__DIR__ . '/Frontend/Access.php');
+    });
 });
-
-

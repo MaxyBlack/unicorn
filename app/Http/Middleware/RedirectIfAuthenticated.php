@@ -5,6 +5,10 @@ namespace Unicorn\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * Class RedirectIfAuthenticated
+ * @package Unicorn\Http\Middleware
+ */
 class RedirectIfAuthenticated
 {
     /**

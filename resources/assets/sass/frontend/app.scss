@@ -1,0 +1,19 @@
+@import "variable-overrides";
+
+@import "variables";
+
+@import "../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import '../../../../node_modules/font-awesome/scss/font-awesome';
+
+/**
+ * Frontend Styles Start Here
+ */
+
+
+.jumbotron {
+  &-unicorn {
+    background-color: $unicorn-background;
+    color: #ffffff;
+    min-height: 400px;
+  }
+}

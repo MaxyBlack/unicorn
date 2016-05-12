@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(Unicorn\User::class, function (Faker\Generator $faker) {
+$factory->define(Unicorn\Models\Access\User\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->safeEmail,

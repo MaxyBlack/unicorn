@@ -5,6 +5,10 @@ namespace Unicorn\Console;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
+/**
+ * Class Kernel
+ * @package Unicorn\Console
+ */
 class Kernel extends ConsoleKernel
 {
     /**
@@ -12,7 +16,9 @@ class Kernel extends ConsoleKernel
      *
      * @var array
      */
-    protected $commands = [];
+    protected $commands = [
+        // Commands\Inspire::class,
+    ];
 
     /**
      * Define the application's command schedule.
@@ -22,6 +28,12 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        // $schedule->command('inspire')->hourly();
 
+        /**
+         * Laravel Backup Commands
+         */
+        // $schedule->command('backup:clean')->daily()->at('01:00');
+        // $schedule->command('backup:run')->daily()->at('02:00');
     }
 }

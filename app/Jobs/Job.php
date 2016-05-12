@@ -4,6 +4,10 @@ namespace Unicorn\Jobs;
 
 use Illuminate\Bus\Queueable;
 
+/**
+ * Class Job
+ * @package Unicorn\Jobs
+ */
 abstract class Job
 {
     /*

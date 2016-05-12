@@ -4,6 +4,10 @@ namespace Unicorn\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 
+/**
+ * Class EncryptCookies
+ * @package Unicorn\Http\Middleware
+ */
 class EncryptCookies extends BaseEncrypter
 {
     /**

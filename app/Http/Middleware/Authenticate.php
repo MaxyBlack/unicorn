@@ -5,6 +5,10 @@ namespace Unicorn\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * Class Authenticate
+ * @package Unicorn\Http\Middleware
+ */
 class Authenticate
 {
     /**

@@ -13,8 +13,21 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'Unicorn\Events\SomeEvent' => [
-            'Unicorn\Listeners\EventListener',
+        /**
+         * Frontend Events
+         */
+
+        /**
+         * Authentication Events
+         */
+        \Unicorn\Events\Frontend\Auth\UserLoggedIn::class  => [
+            \Unicorn\Listeners\Frontend\Auth\UserLoggedInListener::class,
+        ],
+        \Unicorn\Events\Frontend\Auth\UserLoggedOut::class => [
+            \Unicorn\Listeners\Frontend\Auth\UserLoggedOutListener::class,
+        ],
+        \Unicorn\Events\Frontend\Auth\UserRegistered::class => [
+            \Unicorn\Listeners\Frontend\Auth\UserRegisteredListener::class,
         ],
     ];
 

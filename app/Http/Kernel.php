@@ -4,6 +4,10 @@ namespace Unicorn\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
+/**
+ * Class Kernel
+ * @package Unicorn\Http
+ */
 class Kernel extends HttpKernel
 {
     /**
@@ -29,6 +33,13 @@ class Kernel extends HttpKernel
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \Unicorn\Http\Middleware\VerifyCsrfToken::class,
+            \Unicorn\Http\Middleware\LocaleMiddleware::class,
+        ],
+
+        'admin' => [
+            'web',
+            'auth',
+            'access.routeNeedsPermission:view-backend',
         ],
 
         'api' => [
@@ -49,5 +60,11 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
         'guest' => \Unicorn\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+
+        /**
+         * Access Middleware
+         */
+        'access.routeNeedsRole' => \Unicorn\Http\Middleware\RouteNeedsRole::class,
+        'access.routeNeedsPermission' => \Unicorn\Http\Middleware\RouteNeedsPermission::class,
     ];
 }
