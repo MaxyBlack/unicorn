@@ -25,6 +25,9 @@ class AccessServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerBladeExtensions();
+        javascript()->put([
+            'message' => 'Unicorn',
+        ]);
     }
 
     /**
@@ -37,6 +40,8 @@ class AccessServiceProvider extends ServiceProvider
         $this->registerAccess();
         $this->registerFacade();
         $this->registerBindings();
+
+
     }
 
     /**

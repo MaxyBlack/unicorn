@@ -15,10 +15,6 @@ class FrontendController extends Controller
      */
     public function index()
     {
-        javascript()->put([
-            'message' => 'Unicorn',
-        ]);
-
         return view('frontend.index');
     }
 }
