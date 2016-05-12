@@ -1,11 +1,11 @@
 var elixir = require('laravel-elixir');
-//require('./elixir-extensions');
+require('./elixir-extensions');
 require('laravel-elixir-vueify');
 
 elixir(function(mix) {
  mix
      .phpUnit()
-     //.compressHtml()
+     .compressHtml()
 
     /**
      * Copy needed files from /node directories
