@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 
 @section('header')
-    <welcome></welcome>
+    <welcome :message="Unicorn.message"></welcome>
 @stop
 
 @section('content')

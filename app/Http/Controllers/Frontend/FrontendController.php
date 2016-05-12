@@ -16,17 +16,9 @@ class FrontendController extends Controller
     public function index()
     {
         javascript()->put([
-            'test' => 'it works!',
+            'message' => 'Unicorn',
         ]);
 
         return view('frontend.index');
-    }
-
-    /**
-     * @return \Illuminate\View\View
-     */
-    public function macros()
-    {
-        return view('frontend.macros');
     }
 }
