@@ -4,8 +4,8 @@ namespace Unicorn\Repositories\Frontend\Access\User;
 
 use Unicorn\Models\Access\User\User;
 use Illuminate\Support\Facades\Mail;
-use Unicorn\Exceptions\GeneralException;
 use Illuminate\Support\Facades\Hash;
+use Unicorn\Exceptions\GeneralException;
 use Unicorn\Models\Access\User\SocialLogin;
 use Unicorn\Repositories\Backend\Access\Role\RoleRepositoryContract;
 
