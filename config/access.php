@@ -10,7 +10,7 @@ return [
     /*
      * Role model used by Access to create correct relations. Update the role if it is in a different namespace.
     */
-    'role' => App\Models\Access\Role\Role::class,
+    'role' => Unicorn\Models\Access\Role\Role::class,
 
     /*
      * Roles table used by Access to save roles to the database.
@@ -21,7 +21,7 @@ return [
      * Permission model used by Access to create correct relations.
      * Update the permission if it is in a different namespace.
      */
-    'permission' => App\Models\Access\Permission\Permission::class,
+    'permission' => Unicorn\Models\Access\Permission\Permission::class,
 
     /*
      * Permissions table used by Access to save permissions to the database.
@@ -32,7 +32,7 @@ return [
      * PermissionGroup model used by Access to create permissions groups.
      * Update the group if it is in a different namespace.
      */
-    'group' => App\Models\Access\Permission\PermissionGroup::class,
+    'group' => Unicorn\Models\Access\Permission\PermissionGroup::class,
 
     /*
      * Permissions table used by Access to save permissions to the database.
@@ -60,7 +60,7 @@ return [
      * PermissionDependency model used by Access to create permissions dependencies.
      * Update the dependency if it is in a different namespace.
      */
-    'dependency' => App\Models\Access\Permission\PermissionDependency::class,
+    'dependency' => Unicorn\Models\Access\Permission\PermissionDependency::class,
 
     /*
      * assigned_roles table used by Access to save assigned roles to the database.
